@@ -12,6 +12,8 @@
         <module>user</module>
         <module>power</module>
         <module>order</module>
+        <module>eureka</module>
+        <module>power1</module>
     </modules>
 
     <parent>
