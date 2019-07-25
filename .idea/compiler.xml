@@ -7,6 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
+        <module name="eureka3000" />
+        <module name="eureka3001" />
+        <module name="eureka3002" />
         <module name="order" />
         <module name="power" />
         <module name="power1" />
