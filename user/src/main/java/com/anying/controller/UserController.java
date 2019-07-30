@@ -1,5 +1,6 @@
 package com.anying.controller;
 
+import com.anying.service.PowerClientService;
 import com.anying.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,9 @@ public class UserController {
     @Autowired
     RestTemplate restTemplate;
 
+    @Autowired
+    PowerClientService powerClientService;
+
     @RequestMapping("/getUser.do")
     public R getUser(){
         Map<String,Object> map = new HashMap<>();
@@ -25,7 +29,13 @@ public class UserController {
 
     @RequestMapping("/getPower.do")
     public R getPower(){
-        return R.success("操作成功",restTemplate.getForObject("http://localhost:80/getPower.do",Object.class));
+        return R.success("操作成功",restTemplate.getForObject("http://SERVER-POWER/getPower.do",Object.class));
+    }
+
+    @RequestMapping("/getFeignPower.do")
+    public R getFeignPower(){
+        System.out.println("调用了Feign");
+        return R.success("操作成功",powerClientService.getPower());
     }
 
 }
