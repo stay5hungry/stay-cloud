@@ -10,9 +10,11 @@ import java.util.Map;
 public class PowerController {
 
     @RequestMapping("/getPower.do")
-    public Object getPoser(){
+    public Object getPower() throws Exception{
         Map<String,Object> map = new HashMap<>();
         map.put("key","power");
+//        int i=1/0;
+//        Thread.sleep(10000);
         return map;
     }
 }

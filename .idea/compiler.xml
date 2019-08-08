@@ -12,6 +12,7 @@
         <module name="eureka3002" />
         <module name="load-balance" />
         <module name="order" />
+        <module name="order1" />
         <module name="power" />
         <module name="power1" />
         <module name="user" />

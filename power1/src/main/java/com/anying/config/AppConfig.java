@@ -1,4 +1,4 @@
-package anying.config;
+package com.anying.config;
 
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
